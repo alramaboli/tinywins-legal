@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TinyWins privacy policy: what the habit tracker stores on your device and how to remove it.">
+    <meta name="theme-color" content="#f5f2e9">
+    <title>TinyWins Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --canvas: #f5f2e9;
+        --paper: #fffefa;
+        --ink: #243d36;
+        --muted: #6f7e76;
+        --green: #2d7059;
+        --line: #e5e3d9;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--canvas);
+        color: var(--ink);
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+      main {
+        width: min(100% - 2rem, 48rem);
+        margin: 0 auto;
+        padding: clamp(2rem, 8vw, 5rem) 0;
+      }
+      header, article, footer { padding: clamp(1.25rem, 5vw, 2.25rem); }
+      header {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      article {
+        border: 1px solid var(--line);
+        border-radius: 1.5rem;
+        background: var(--paper);
+      }
+      .brand {
+        margin: 0 0 .75rem;
+        color: var(--green);
+        font-size: .9rem;
+        font-weight: 800;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 8vw, 3.25rem);
+        line-height: 1.1;
+        letter-spacing: -.04em;
+      }
+      h2 {
+        margin: 2rem 0 .5rem;
+        font-size: 1.25rem;
+        line-height: 1.3;
+      }
+      h2:first-child { margin-top: 0; }
+      p, ul { margin: .5rem 0 0; }
+      li + li { margin-top: .35rem; }
+      .updated, .muted { color: var(--muted); }
+      .notice {
+        margin: 1.5rem 0;
+        padding: 1rem 1.1rem;
+        border-left: 4px solid var(--green);
+        border-radius: .5rem;
+        background: #edf3ed;
+      }
+      a { color: var(--green); }
+      code {
+        overflow-wrap: anywhere;
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      }
+      footer {
+        padding-bottom: 0;
+        color: var(--muted);
+        font-size: .9rem;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { scroll-behavior: auto !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="brand">TinyWins</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: October 26, 2026</p>
+      </header>
+
+      <article>
+        <div class="notice">
+          <strong>Publisher setup required before publication.</strong>
+          Replace the publisher and contact placeholders below with verified details, and review
+          this policy against the final store build and its included SDKs.
+        </div>
+
+        <h2>Who is responsible</h2>
+        <p>
+          TinyWins is published by <strong>[PUBLISHER LEGAL NAME]</strong>. For privacy
+          questions, contact <a href="mailto:[PRIVACY CONTACT EMAIL]">[PRIVACY CONTACT EMAIL]</a>.
+          These details must be completed by the publisher before this policy is published.
+        </p>
+
+        <h2>Information TinyWins stores</h2>
+        <p>
+          TinyWins is a habit tracker. The app stores the information needed for the features you
+          use:
+        </p>
+        <ul>
+          <li>Habit name and optional note or description.</li>
+          <li>Category, icon selection, and selected weekdays.</li>
+          <li>Habit creation and update dates, and whether a habit is archived.</li>
+          <li>Completion dates and completion timestamps.</li>
+          <li>Whether onboarding has been completed.</li>
+        </ul>
+        <p>
+          Habit names and notes are free text. If you choose to enter personal or health-related
+          details there, those details are stored with that habit. TinyWins does not have a
+          separate medical-record or health-measurement form.
+        </p>
+        <p>
+          The app uses the device's current date and time to date habits and completions and
+          calculate progress. Habit records also have an internal local identifier.
+        </p>
+
+        <h2>Where information is stored and sent</h2>
+        <p>
+          The reviewed app code saves habit records in a SQLite database named
+          <code>tinywins.db</code> in the app's local storage. The reviewed application source
+          contains no account service, cloud synchronization, analytics or advertising code, or
+          app-level code that uploads habit records to a TinyWins server. Habit tracking can be
+          used offline.
+        </p>
+        <p>
+          The Android app manifest includes the <code>INTERNET</code> permission. That permission
+          permits network access; by itself it does not show that the app sends habit information.
+          Network behavior and all included SDKs must be checked again in the final production
+          bundle before publication.
+        </p>
+        <p>
+          Installing or updating the app uses the app store through which it is distributed.
+          Google Play, the device operating system, and any enabled device-backup service operate
+          under their own terms and privacy policies.
+        </p>
+
+        <h2>Accounts, analytics, and third parties</h2>
+        <p>
+          The reviewed app implementation does not provide user registration, login, or
+          authentication. No analytics, advertising, or crash-reporting SDK is declared in the
+          app's direct dependencies or observed in the generated Android native package list.
+          The app does not have a TinyWins server account to which habit data is sent.
+        </p>
+        <p>
+          TinyWins is built with Expo and React Native and includes native modules for local
+          SQLite storage, navigation, gestures, and screen layout. The final production bundle
+          may differ from the reviewed project snapshot; the publisher must inspect all final
+          direct and transitive SDKs and their data practices before making store declarations.
+        </p>
+
+        <h2>Permissions and device information</h2>
+        <p>
+          The reviewed app screens do not request access to contacts, location, camera,
+          microphone, photos, or files. The Android manifest also declares Internet access.
+          The app code reviewed does not read a device advertising identifier or provide an
+          account/profile field.
+        </p>
+
+        <h2>Retention and deletion</h2>
+        <p>
+          Habit data remains in the local database until you delete a habit, use
+          <strong>Settings → Reset all data</strong>, or the app's data is removed by the
+          operating system. Deleting a habit also deletes its completion history. Reset all data
+          removes all habits, completion records, and onboarding state from the app database.
+          Archiving a habit only marks it archived; it does not delete it.
+        </p>
+        <p>
+          TinyWins does not provide an account, so it has no account-deletion workflow or
+          server-side user profile to delete. The app does not claim that database deletion
+          securely overwrites storage blocks.
+        </p>
+
+        <h2>Device backups</h2>
+        <p>
+          The reviewed Android manifest sets <code>android:allowBackup="true"</code>. This
+          permits Android backup and transfer mechanisms, but the exact eligibility and behavior
+          for this database have not been verified across devices and Android versions. A device
+          backup may retain a copy after data is removed from the app. Check the final release
+          backup configuration before publication. Backup behavior on other platforms depends on
+          their operating-system settings and has not been verified here.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+          The database is stored in the app's local storage and is subject to the device
+          operating system's app isolation. The app uses SQLite query parameters for database
+          writes. The reviewed project does not configure database-level encryption or a
+          separate encryption key. Do not treat the database as encrypted by the app, and use
+          the device's screen lock and security settings to protect access to your device.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          The intended age group and whether TinyWins is directed to children have not been
+          supplied by the publisher. The publisher must decide the target audience and complete
+          applicable child-safety and store declarations before release.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          If the app's data practices change, the publisher should update this policy and the
+          corresponding store disclosures before releasing the changed app.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Privacy contact: <a href="mailto:[PRIVACY CONTACT EMAIL]">[PRIVACY CONTACT EMAIL]</a>.
+          Replace this placeholder with a monitored address before publishing this page.
+        </p>
+      </article>
+
+      <footer>
+        <p>
+          This policy describes the reviewed TinyWins application implementation. It is not a
+          statement about data practices of Google Play, the device operating system, or
+          third-party services outside the app's control.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
